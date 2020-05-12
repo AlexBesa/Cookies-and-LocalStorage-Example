@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie example</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form>
+        <h1>Cookies, Local Storage and Session Storage</h1>
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/GihQAC1I39Q" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+        <br>
+        <div class="one">
+            <p>Set a cookie on a document.Read all cookies.Add two radio buttons
+                with two available languages (e.g., en-US,ro-RO).The one whose value equals cookie’s value 
+                should be “pre-selected”.When the user selects the other radio button, his option should 
+                be preserved in the cookie
+            </p>
+            <p>Please select your language:</p>
+            <input type="radio" id="en-US" name="language" value="en-US">
+            <label for="en-US">English</label><br>
+            <input type="radio" id="ro-RO" name="language" value="ro-RO">
+            <label for="ro-RO">Romanian</label>
+        </div>
+        
+        <div class="two">
+            <p>Example Local Storage</p>
+            <p>Please select your language:</p>
+            <input type="radio" id="roBtn" name="lang" value="ro-RO">
+            <label for="roBtn">Romanian</label><br>
+            <input type="radio" id="enBtn" name="lang" value="en-US">
+            <label for="enBtn">English</label><br>
+        </div>
+        <br>
+        <p>The read-only localStorage property allows you to access a Storage object for the Document's origin;
+        the stored data is saved across browser sessions. localStorage is similar to sessionStorage, except that
+        while data stored in localStorage has no expiration time, data stored in sessionStorage gets cleared when 
+        the page session ends — that is, when the page is closed.<br>            
+        It should be noted that data stored in either localStorage or sessionStorage is specific to the protocol
+        of the page.
+        The keys and the values are always strings (note that, as with objects, integer keys will be automatically 
+        converted to strings).</p>
+        
+    </form>
+    
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
